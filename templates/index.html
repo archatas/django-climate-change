@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% load i18n weather %}
+
+{% block content %}
+    {% get_current_weather in "berlin" %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% load i18n %}
+<div class="current-wheather">
+    <h3>{{ weather.location.name }}</h3>
+    <dl>
+        <dt>{% trans "Temperature" %}:</dt>
+        <dd>{{ weather.temperature }}° C</dd>
+        <dt>{% trans "Humidity" %}:</dt>
+        <dd>{{ weather.humidity }} %</dd>
+        <dt>{% trans "Wind speed" %}:</dt>
+        <dd>{{ weather.wind_speed }} km/h</dd>
+        <dt>{% trans "Visibility" %}:</dt>
+        <dd>{{ weather.visibility }} km</dd>
+    </dl>
+</div>

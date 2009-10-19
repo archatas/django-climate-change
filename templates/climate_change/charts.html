@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ location.name }}{% endblock %}
+
+{% block header %}
+    <h1>{{ location.name }}</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="chart-temperature">
+        <h2>{% trans "Temperature" %}</h2>
+        <object type="application/x-shockwave-flash" data="/media/flash/open-flash-chart.swf?data-file={% url climate_change_temperature slug=location.slug %}" height="250" width="500">
+            <param name="movie" value="/media/flash/open-flash-chart.swf?data-file={% url climate_change_temperature slug=location.slug %}"></param>
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="quality" value="high" />
+        </object>
+    </div>
+    <div class="chart-humidity">
+        <h2>{% trans "Humidity" %}</h2>
+        <object type="application/x-shockwave-flash" data="/media/flash/open-flash-chart.swf?data-file={% url climate_change_humidity slug=location.slug %}" height="250" width="500">
+            <param name="movie" value="/media/flash/open-flash-chart.swf?data-file={% url climate_change_humidity slug=location.slug %}"></param>
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="quality" value="high" />
+        </object>
+    </div>
+    <div class="chart-wind-speed">
+        <h2>{% trans "Wind speed" %}</h2>
+        <object type="application/x-shockwave-flash" data="/media/flash/open-flash-chart.swf?data-file={% url climate_change_wind_speed slug=location.slug %}" height="250" width="500">
+            <param name="movie" value="/media/flash/open-flash-chart.swf?data-file={% url climate_change_wind_speed slug=location.slug %}"></param>
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="quality" value="high" />
+        </object>
+    </div>
+    <div class="chart-visibility">
+        <h2>{% trans "Visibility" %}</h2>
+        <object type="application/x-shockwave-flash" data="/media/flash/open-flash-chart.swf?data-file={% url climate_change_visibility slug=location.slug %}" height="250" width="500">
+            <param name="movie" value="/media/flash/open-flash-chart.swf?data-file={% url climate_change_visibility slug=location.slug %}"></param>
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="quality" value="high" />
+        </object>
+    </div>
+{% endblock %}
