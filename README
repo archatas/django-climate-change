@@ -1,0 +1,15 @@
+This is the complete code of the app which development was described in this tutorial:
+
+http://djangotricks.blogspot.com/2009/10/weather-app-tutorial-part-1-of-5.html
+http://djangotricks.blogspot.com/2009/10/weather-app-tutorial-part-2-of-5.html
+http://djangotricks.blogspot.com/2009/10/weather-app-tutorial-part-3-of-5.html
+http://djangotricks.blogspot.com/2009/10/weather-app-tutorial-part-4-of-5.html
+http://djangotricks.blogspot.com/2009/10/weather-app-tutorial-part-5-of-5.html
+
+The tutorial shows 
+ * how to create virtual environments using virtualmin,
+ * how to create django apps with their models, views, and urls,
+ * how to use migrations using south,
+ * how to write management commands,
+ * how to write custom template tags,
+ * how to use third-party libraries for displaying data visually.
